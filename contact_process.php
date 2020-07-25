@@ -7,11 +7,12 @@
     $number = $_REQUEST['number'];
     $cmessage = $_REQUEST['message'];
 
-	($from);
-	($name);
-	($subject);
-	($number);
-	($cmessage);
+	echo($from);
+	echo($name);
+	echo($subject);
+	echo($number);
+	echo($cmessage);
+die;
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
 	$headers .= "Reply-To: ". $from . "\r\n";
