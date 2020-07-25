@@ -12,6 +12,7 @@
 	echo($subject);
 	echo($number);
 	echo($cmessage);
+redirect("index.html");
 die;
     $headers = "From: $from";
 	$headers = "From: " . $from . "\r\n";
@@ -19,10 +20,6 @@ die;
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from your Bitmap otogray.";
-
-    $logo = 'img/logo.png';
-    $link = '#';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
