@@ -1,5 +1,6 @@
 <?php
-
+header("Location: https://shivamsaini46.github.io/sunshinezoom.github.io/index.html");
+exit();
     $to = "shivamsainiagra25@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
