@@ -5,7 +5,7 @@ if(!empty($_POST["shivamsainiagra25@gmail.com"])) {
 	$subject = $_POST["subject"];
 	$content = $_POST["content"];
 
-	$toEmail = "admin@phppot_samples.com";
+	$toEmail = "sunshinezoom89@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
