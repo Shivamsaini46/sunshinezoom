@@ -1,18 +1,17 @@
 <?php
-if(!empty($_POST["shivamsainiagra25@gmail.com"])) {
-	$name = $_POST["userName"];
-	$email = $_POST["userEmail"];
-	$subject = $_POST["subject"];
-	$content = $_POST["content"];
 
-	$toEmail = "sunshinezoom89@gmail.com";
-	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $subject, $content, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
-	    $type = "success";
-	}
+if (isset($_POST['submit'])) {
+	$name=$_POST['name'];
+	$subject=$_POST['subject'];
+	$mailForm=$_POST['mail'];
+	$message=$_POST['message'];
+	
+	$mailto="shivamsainiagra25@gmail.com";
+	$headers="From: ".$mailFrom;
+	$txt="You have received an e-mail from".$name.".\n\n".$message;
+	
+mail();($mailTo,$subject,$txt,$headers);
+	header("Location:index.php?mailsend");
+
 }
-require_once "contact-view.php";
-?>
-
 
